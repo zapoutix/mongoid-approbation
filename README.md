@@ -10,13 +10,13 @@ Quick Start
 
 Add mongoid_approbation to your Gemfile:
 
-
+```ruby
 gem 'mongoid_approbation'
-
+```
 
 Set up some slugs:
 
-
+```ruby
 class Comment
   include Mongoid::Document
   include Mongoid::Approbation
@@ -26,10 +26,10 @@ class Comment
 
   under_approbation :default => :pending, :save_as => :pending, :accepted_status => [:pending, :accepted, :rejected]
 end
-
+```
 
 Exemple :
-
+```ruby
 	comment = Comment.new
 	comment.title = "Hello world !"
 	comment.save
@@ -48,24 +48,22 @@ Exemple :
 	# or
 	comment.save_as(:accepted)
 	
-
+```
 
 If the user update the comment, it will automatically return to pending status.
-
-
+```ruby
 	comment.status # <= accepted
 	comment.content = "i am the content"
 	comment.save
 	comment.status # <= pending
-	
-
+```
 
 In your controller, use available finder:
 
-
+```ruby
 # GET all pending comments
 pending_comment = Comment.find_by_status(:pending)
 published_comment = Comment.find_by_status(:accepted)
 
-
+```
 
