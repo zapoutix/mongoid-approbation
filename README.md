@@ -28,7 +28,8 @@ class Comment
 end
 ```
 
-Exemple :
+Exemple
+
 ```ruby
 	comment = Comment.new
 	comment.title = "Hello world !"
