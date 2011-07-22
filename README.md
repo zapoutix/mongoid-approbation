@@ -40,13 +40,13 @@ Exemple :
 	#accept comment
 	comment.set_status(:accepted)
 	comment.save
-	# or
+	# same as :
 	comment.save_as(:accepted)
 	
 	#reject comment
 	comment.set_status(:rejected)
 	comment.save
-	# or
+	# same as :
 	comment.save_as(:accepted)
 	
 ```
