@@ -28,7 +28,7 @@ class Comment
 end
 ```
 
-Exemple
+Exemple :
 
 ```ruby
 	comment = Comment.new
@@ -52,6 +52,7 @@ Exemple
 ```
 
 If the user update the comment, it will automatically return to pending status.
+
 ```ruby
 	comment.status # <= accepted
 	comment.content = "i am the content"
