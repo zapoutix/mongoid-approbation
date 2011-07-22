@@ -68,4 +68,4 @@ pending_comment = Comment.find_by_status(:pending)
 published_comment = Comment.find_by_status(:accepted)
 
 ```
-
+This gem is use on [Passion Gourmande](http://www.passion-gourmande.com "Passion Gourmande")
