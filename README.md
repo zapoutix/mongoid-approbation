@@ -14,7 +14,7 @@ Add mongoid_approbation to your Gemfile:
 gem 'mongoid_approbation'
 ```
 
-Set up some slugs:
+Set up model:
 
 ```ruby
 class Comment
